@@ -87,3 +87,18 @@ This project includes a full stack setup with:
 - TypeScript for type safety
 
 Start experimenting and see what you can build!
+
+## Next step
+
+When you are ready to go to the next lesson, we will checkout a different branch from the git repo!
+- Click inside the terminal window, and stop the dev server with CTRL+C (Mac: CMD+C)
+- Click "main" down towards the bottom left
+- Choose the branch called "origin/one-shot" from the branch selector
+- The code now changes in the IDE!
+- Run the dev server again:
+
+```bash
+pnpm dev
+```
+
+- You may have to close and reopen the browser tab, but a F5 (Mac: CMD+R) should do the trick.
