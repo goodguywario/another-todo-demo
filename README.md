@@ -1,36 +1,89 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+# Full Stack Development with Agentic Coding
+
+This is a bootstrap project designed as your first step in learning full stack development with the assistance of AI-powered coding tools. This Next.js application serves as a foundation where you can experiment with building complete applications using agentic coding assistance.
+
+## Prerequisites
+
+### Windows Users
+Install Windows Subsystem for Linux (WSL):
+```powershell
+wsl --install
+```
+After installation, restart your computer and complete WSL setup. All subsequent commands should be run in the WSL terminal.
+
+### Mac Users
+1. Install Xcode Command Line Tools:
+```bash
+xcode-select --install
+```
+
+2. Install Homebrew:
+```bash
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
+
+### All Users
+1. **Install Node Version Manager (nvm):**
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
+```
+Restart your terminal, then:
+```bash
+nvm install --lts
+nvm use --lts
+```
+
+2. **Install pnpm:**
+```bash
+npm install -g pnpm
+```
+
+3. **Create a GitHub account** using your personal email address at [github.com](https://github.com)
+
+4. **Download and install Cursor IDE** from [cursor.sh](https://cursor.sh)
+
+5. **Log into Cursor** using your GitHub account
 
 ## Getting Started
 
-First, run the development server:
+1. **Open a new terminal in Cursor:**
+   - Use the top menu → Terminal → New Terminal (or click the three dots icon to the right if needed)
 
+Then in the terminal:
+2. **Install dependencies:**
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. **Start the development server:**
+```bash
+pnpm dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+4. **Open your browser** and navigate to [http://localhost:3000](http://localhost:3000)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+You should see the application running successfully!
 
-## Learn More
+## Start Building with AI
 
-To learn more about Next.js, take a look at the following resources:
+Once everything is working, find the chat window on the right side of the Cursor IDE. Try these zero-shot prompts to build applications:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- "Make a todo app"
+- "Make a multiplayer poker game"
+- "Build a weather dashboard"
+- "Create a personal expense tracker"
+- "Make a recipe sharing platform"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The AI assistant will help you build complete, functional applications from these simple prompts!
 
-## Deploy on Vercel
+## What's Next?
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+This project includes a full stack setup with:
+- Next.js 15 for the frontend and API routes
+- PostgreSQL database with Drizzle ORM
+- React Query for data fetching
+- Tailwind CSS for styling
+- TypeScript for type safety
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Start experimenting and see what you can build!
